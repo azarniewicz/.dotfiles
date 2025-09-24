@@ -1,16 +1,17 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": [],
-  "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["tray", "pulseaudio", "brightness", "battery"],
+  "modules-left": ["tray", "hyprland/workspaces"],
+  "modules-center": [ "clock"],
+  "modules-right": ["pulseaudio", "brightness", "battery"],
 
   "brightness": {
     "format": " {percentage}%",
     "tooltip": "Click to adjust",
     "on-click": "brightnessctl set +5%",
     "on-right-click": "brightnessctl set 5%-",
-    "interval": 5
+    "interval": 5,
+    "device": "intel_backlight"
   },
 
   "tray": {
@@ -19,7 +20,7 @@
     },
 
   "clock": {
-    "format": "{:%a %d %b %H:%M}"
+    "format": "{:%H:%M}"
   },
 
   "pulseaudio": {
