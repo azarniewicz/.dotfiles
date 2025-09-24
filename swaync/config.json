@@ -1,0 +1,72 @@
+{
+  "$schema": "/etc/swaync/config-schema.json",
+  "positionX": "center",
+  "positionY": "top",
+  "control-center-positionX": "center",
+  "control-center-positionY": "top",
+  "layer": "overlay",
+  "control-center-layer": "overlay",
+  "marginTop": 10,
+  "marginRight": 10,
+  "marginBottom": 10,
+  "marginLeft": 10,
+  "notification-window-width": 500,
+  "notification-body-image-height": 100,
+  "notification-body-image-width": 200,
+  "timeout": 10,
+  "timeout-low": 5,
+  "timeout-critical": 0,
+  "fit-to-screen": true,
+  "control-center-width": 500,
+  "control-center-height": 600,
+  "control-center-fit-to-screen": true,
+  "notification-visibility": {
+    "normal": {
+      "state": "visible",
+      "urgency": "Normal"
+    },
+    "low": {
+      "state": "visible",
+      "urgency": "Low"
+    },
+    "critical": {
+      "state": "visible",
+      "urgency": "Critical"
+    }
+  },
+  "widgets": [
+    "title",
+    "dnd",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": "Clear All"
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    },
+    "label": {
+      "max-lines": 5,
+      "text": "Label Widget"
+    },
+    "mpris": {
+      "image-size": 96,
+      "image-radius": 12
+    }
+  },
+  "keyboard-shortcuts": {
+    "toggle-dnd": "Ctrl+grave",
+    "toggle-control-center": "Ctrl+space",
+    "close-all": "Ctrl+Shift+space"
+  },
+  "notification-script": {
+    "exec": "/path/to/your/script",
+    "args": [
+      "arg1",
+      "arg2"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+/* --- Notification Styling v2 --- */
+
+/* This rule adds padding to the main notification pop-up window */
+.notification-window {
+    padding: 8px;
+}
+
+/* This rule adds padding AROUND the text block, inside the window */
+.notification-content {
+    padding: 10px;
+}
+
+/* This is the notification title - now smaller */
+.notification-summary {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* This is the main message text - now smaller */
+.notification-body {
+    font-size: 12px;
+    font-weight: normal;
+}
