@@ -31,9 +31,6 @@
 
   "hyprland/workspaces": {
     "format": "{name}",
-    "format-focused": "{name}",
-    "format-occupied": "{name}",
-    "format-urgent": "{name}",
     "all-outputs": true,
     "pin-workspaces": false
   },
