@@ -4,9 +4,22 @@
   "spacing": 10,
   "modules-left": ["tray", "hyprland/workspaces"],
   "modules-center": [ "clock"],
-  "modules-right": ["pulseaudio", "backlight", "battery"],
+  "modules-right": ["custom/bluetooth", "pulseaudio", "backlight", "battery"],
 
-  "backlight": {
+  "custom/bluetooth": {
+        "format": "{icon} {text}",
+        "return-type": "json",
+        "interval": 2,
+        "exec": "~/.config/waybar/bt-menu.sh",
+        "on-click": "~/.config/waybar/bt-menu.sh menu",
+        "tooltip": true,
+        "format-icons": {
+            "on": "",
+            "off": "󰂲",
+            "connected": ""
+        }
+},  
+"backlight": {
     "format": "{percent}%",
     "tooltip": "Click to adjust",
     "on-click": "brightnessctl set +5%",
