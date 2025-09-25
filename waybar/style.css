@@ -40,21 +40,3 @@ window#waybar {
  margin-left: 10px;
 }
 
-/* Add this to your ~/.config/waybar/style.css */
-
-#custom-bluetooth {
-    padding: 0 10px;
-    min-width: 20px;
-}
-
-#custom-bluetooth.connected {
-    color: #89b4fa; /* A nice blue for connected state */
-}
-
-#custom-bluetooth.on {
-    color: #cdd6f4; /* A standard text color */
-}
-
-#custom-bluetooth.off {
-    color: #4c566a; /* A muted/grey color for off state */
-}
